@@ -1,5 +1,51 @@
 # Changelog
 
+## [6.6.0](https://github.com/jinnnyang/rea/compare/rea-agents-6.5.0...rea-agents-6.6.0) (2026-10-16)
+
+
+### Bug Fixes
+
+* **adb:** bind transfer evidence to consumed snapshots ([1342127](https://github.com/jinnnyang/rea/commit/1342127e91d4db8b4113a7a4e85be909bc96e1db))
+* **adb:** retain and resolve owned hash cleanup ([1bd5c5c](https://github.com/jinnnyang/rea/commit/1bd5c5c87e81b27bfb16140f71ffa03563e58477))
+* **adb:** retain cancellation at screen publication ([461eb16](https://github.com/jinnnyang/rea/commit/461eb161282237ad3135f6d8f8fbbc560285548e))
+* **analysis-view:** preserve native relationship coverage ([89dd71f](https://github.com/jinnnyang/rea/commit/89dd71f0f0b3e02049a22b2bb02da98d157b60f8))
+* **android:** resolve hash cleanup through its owner ([6e74704](https://github.com/jinnnyang/rea/commit/6e74704f931e994dfa6eef6736dd97a4e2fc2671))
+* **apple:** preserve exact Interface Builder plist integers ([2202e3f](https://github.com/jinnnyang/rea/commit/2202e3f0ba556d40cc6e598df1ecbdf1eda56c13))
+* **artifacts:** reject colliding extraction paths before writing ([862a0b2](https://github.com/jinnnyang/rea/commit/862a0b2631785492f8dc20c8acd396646c545fd1))
+* **browser:** compare accessibility only with observed coverage ([0123d59](https://github.com/jinnnyang/rea/commit/0123d5976828bfe621bd51daa4cf39fee48a1349))
+* **browser:** match exact WebMCP receiver segments ([38f92d1](https://github.com/jinnnyang/rea/commit/38f92d108e3148cdf47e4ffbfe3de8a76e795d51))
+* **browser:** own transport cleanup through finalization ([93c620c](https://github.com/jinnnyang/rea/commit/93c620c3e7c401be40b71c480518147c76ade4dc))
+* **dev:** retain exclusive ownership through command shutdown ([c7b7089](https://github.com/jinnnyang/rea/commit/c7b70896b1a1f346f1dc591773e776444a8f5f98)), closes [#4258](https://github.com/jinnnyang/rea/issues/4258)
+* **docs:** resolve link roots before containment checks ([034293d](https://github.com/jinnnyang/rea/commit/034293df14c558a0fff4467fb28099148f9834a5)), closes [#4264](https://github.com/jinnnyang/rea/issues/4264)
+* **electron:** snapshot script frame identity at ingestion ([6b991d3](https://github.com/jinnnyang/rea/commit/6b991d3aa73b5930c89a8620b912c9ac76c29f13))
+* **electron:** unwrap transparent inline window options ([b67baed](https://github.com/jinnnyang/rea/commit/b67baede2ed679bdb22af5d9c62a549c30cff9b0))
+* **errors:** exclude recovered cleanup resources ([3ed925e](https://github.com/jinnnyang/rea/commit/3ed925e547793c5869df194b70a04fbec8883c6b))
+* **evidence:** retain completed observations on late cancellation ([3b69864](https://github.com/jinnnyang/rea/commit/3b698645a086d80156d9196fd296cbb4195fc888)), closes [#4261](https://github.com/jinnnyang/rea/issues/4261)
+* **filesystem:** retain stable hash cleanup owners across callers ([131fd5d](https://github.com/jinnnyang/rea/commit/131fd5ddcd3dc7124be118c7a3e56b8e8df38baf)), closes [#4266](https://github.com/jinnnyang/rea/issues/4266)
+* **ghidra:** retain request limits and startup cleanup ([5f0d18a](https://github.com/jinnnyang/rea/commit/5f0d18a534bbe7656a5b0981deb145bdbbb11ecb))
+* **ghidra:** retain scoped failures through process finalization ([d52a488](https://github.com/jinnnyang/rea/commit/d52a488476e7c41f573f23a1965d3f32d4e6a7f2))
+* **go:** distinguish dependency coverage from parse completeness ([a050927](https://github.com/jinnnyang/rea/commit/a05092726f1283d32b2afe761f430abd2de18386))
+* **javascript:** attribute service workers to intact platform paths ([396b89c](https://github.com/jinnnyang/rea/commit/396b89c5e25be26ad58f88986c0b437faad2d631)), closes [#3841](https://github.com/jinnnyang/rea/issues/3841)
+* **javascript:** bound static getter reference expansion ([880b3a5](https://github.com/jinnnyang/rea/commit/880b3a510bd8bbea2a7d4933549d8070b0409afe))
+* **javascript:** preserve canonical rest-array property keys ([43bc6e1](https://github.com/jinnnyang/rea/commit/43bc6e1d23355e9e1c494fbcb11b777c348731b8))
+* **javascript:** preserve incoming callback target uncertainty ([#4243](https://github.com/jinnnyang/rea/issues/4243)) ([42fc6c5](https://github.com/jinnnyang/rea/commit/42fc6c53ae188978deb3bedfe88287b6b316ba22)), closes [#3880](https://github.com/jinnnyang/rea/issues/3880)
+* **javascript:** retain unresolved network targets with provenance ([018ab2c](https://github.com/jinnnyang/rea/commit/018ab2c5d9bfbfdf12b5480f3f810f520ca0156b))
+* **javascript:** select timer handles at cancellation reads ([6183544](https://github.com/jinnnyang/rea/commit/6183544e8b42b65feaf4f674f860b1fb3b0c95eb))
+* **javascript:** unify loader binding and mutation ownership ([1b9b725](https://github.com/jinnnyang/rea/commit/1b9b725c4c83b7c345c5cb5eabdb4c57c50e1daf))
+* **javascript:** version syntax-aware structural fingerprints ([0ef938f](https://github.com/jinnnyang/rea/commit/0ef938f4c5faa48a0ec4ef4574390eb6f05cfce6))
+* **mcp:** preserve nested JSON values in compact array schemas ([b3389a5](https://github.com/jinnnyang/rea/commit/b3389a5b0834265fe7a40391be315d810a53a97e))
+* **mcp:** retain shutdown signals until cleanup succeeds ([8873b39](https://github.com/jinnnyang/rea/commit/8873b39770e89eae22b7693bc492d7e423b22bea))
+* **native:** distinguish undecoded Swift spelling adjustments ([808339f](https://github.com/jinnnyang/rea/commit/808339f0b1cf3837445f392b5d5f1f362d64a27d))
+* **native:** preserve slice identity when selecting UUID rows ([2f6b9ec](https://github.com/jinnnyang/rea/commit/2f6b9ecdc6a0680117898194fbeb4e513080d6f7))
+* **providers:** own shared startup and retained cleanup ([ca7ee01](https://github.com/jinnnyang/rea/commit/ca7ee018b25db6074ab1cb31398af2e82d5a7c29))
+* **reference:** resolve runtime imports from their owning syntax ([c0d550b](https://github.com/jinnnyang/rea/commit/c0d550b231f5a9d49eac9e7554184ee938d79de0))
+* **session:** report retained file and candidate cleanup ([839410b](https://github.com/jinnnyang/rea/commit/839410b663525b51c1aacf8a4027d7bb1f3da059))
+* **setup:** preserve JSONC trivia when removing registrations ([4fd28fc](https://github.com/jinnnyang/rea/commit/4fd28fc9e0c4f8358147af38c72ab9e814f52d61))
+* **setup:** resolve empty Claude profile paths consistently ([79e83cb](https://github.com/jinnnyang/rea/commit/79e83cbd67ca9fd78b5469c3d44101e5e93f8a2b))
+* **verifiers:** report adb operation and cleanup failures together ([139d86b](https://github.com/jinnnyang/rea/commit/139d86b05c4c03bf286f8237352a92e10816c66e)), closes [#4260](https://github.com/jinnnyang/rea/issues/4260)
+* **wasm:** retain cancellation through final cleanup ([321cacb](https://github.com/jinnnyang/rea/commit/321cacb84a020f447e1110df5c58fa71d99b7bf1))
+* **web:** read WebMCP inputs from schema properties ([ebd5a82](https://github.com/jinnnyang/rea/commit/ebd5a82c439f6deb3a06062225ce009eb03257cf))
+
 ## [6.5.0](https://github.com/morluto/rea/compare/rea-agents-6.4.0...rea-agents-6.5.0) (2026-10-13)
 
 Provider prerequisites and recorded verification scope are listed in [the testing guide](docs/testing.md).
